@@ -1,0 +1,116 @@
+@keyframes start {
+    from {background-color: black;}
+    to {background-color: cadetblue;}
+}
+
+@keyframes move-words {
+    0% {
+        top: -100%;
+    }
+}
+
+body {
+    background-color: cadetblue;
+    animation-name: start;
+    animation-duration: 1s;
+}
+
+.topnav {
+    overflow: hidden;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    float: right;
+    animation: move-words 1.5s;
+    background-color: cadetblue;
+    background: linear-gradient(90deg, cadetblue 15%, burlywood 100%);
+    width: 100%;
+}
+
+.topnav a {
+    overflow: hidden;
+    float: right;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+.topnav a:hover {
+    color: grey;
+}
+
+.topnav a.active {
+    color: white;
+}
+
+.topnav a.active:hover {
+    color: grey;
+}
+
+.logo h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    position: fixed;
+    text-shadow: 1px 1px 1px black;
+    top: 0px;
+    left: 30px;
+    font-style: italic;
+    font-size: 34px;
+    animation: move-words 0.7s;
+}
+
+.logo h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    position: fixed;
+    top: 25px;
+    left: 50px;
+    font-style: italic;
+    font-weight: bold;
+    transform: rotate(-5deg);
+    text-shadow: 1px 1px 1px white;
+    font-size: 24px;
+    animation: move-words 0.5s;
+}
+
+.home h1 {
+    font-style: italic;
+    float: left;
+    font-size: 34px;
+    padding-top: 100px;
+    padding-left: 30px;
+}
+
+.home p {
+    padding-top: 200px;
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.about p {
+    padding-top: 200px;
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.about a {
+    color: black;
+}
+
+.about a:hover {
+    color: dimgray;
+}
+
+.about h1 {
+    font-style: italic;
+    float: left;
+    font-size: 34px;
+    padding-top: 100px;
+    padding-left: 30px;
+}
